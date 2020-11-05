@@ -1,0 +1,27 @@
+############ input maping
+NET "IN_PORT_act[0]" LOC = P11; #C0 
+NET "IN_PORT_act[1]" LOC = P14; #C1 
+NET "IN_PORT_act[2]" LOC = P16; #C2 
+NET "IN_PORT_act[3]" LOC = P21; #C3 
+NET "reset" LOC 		= P51; # res
+NET "clk" LOC = P124 |CLOCK_DEDICATED_ROUTE; # ociellator
+#####################################################################
+NET "OUT_PORT[7]"  LOC  = P111; #D7
+NET "OUT_PORT[6]"  LOC  = P112; #D6
+NET "OUT_PORT[5]"  LOC  = P114; #D5   	  
+NET "OUT_PORT[4]"  LOC  = P115; #D4	  
+NET "OUT_PORT[3]"  LOC  = P116; #D3  
+NET "OUT_PORT[2]"  LOC  = P117; #D2   
+NET "OUT_PORT[1]"  LOC  = P118; #D1
+NET "OUT_PORT[0]"  LOC  = P119; #D0
+NET "OUT_PORT[8]"  LOC  = P120; #E
+NET "OUT_PORT[9]"  LOC  = P121; #RW
+NET "OUT_PORT[10]" LOC  = P123; #RS
+NET "OUT_PORT[15]" LOC  = P55;  #additional
+NET "OUT_PORT[14]" LOC  = P9;   
+NET "OUT_PORT[13]" LOC  = P7;  
+NET "OUT_PORT[12]" LOC  = P5; 
+NET "OUT_PORT[11]" LOC  = P1;  
+#########################################################################
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 40 ns LOW 50%;
